@@ -5,7 +5,7 @@ export function binarySearchSimple (array: number[], key: number) {
     while (leftIndex < rightIndex - 1) {
         currentIndex = getCurrentIndex(leftIndex, rightIndex);
         if (array[currentIndex] === key) return currentIndex;
-        if (array[currentIndex] < key)
+        if (array[currentIndex] > key)
             leftIndex = currentIndex;
         else
             rightIndex = currentIndex;
